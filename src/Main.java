@@ -74,7 +74,7 @@ public class Main {
     System.out.printf(testStr, namePeter);
 
     System.out.println("Inter Name, please: ");
-    String nameInput = input.next();//nextInt();
+    String nameInput = input.nextLine();//nextInt();
     System.out.printf(testStr, nameInput);
   }
 }
