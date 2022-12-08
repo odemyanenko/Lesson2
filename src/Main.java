@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
     //Lesson1
@@ -60,7 +62,19 @@ public class Main {
     System.out.println("PriceWithDiscount = " + (priceA + priceB - discount));
     System.out.println("Discount = " + discount);
 
+    //5
 
+    Scanner input = new Scanner(System.in);
 
+    String testStr = "Привет %s! Как дела?\n";
+    String nameIvan = "Ivan";
+    String namePeter = "Peter";
+
+    System.out.printf(testStr, nameIvan);
+    System.out.printf(testStr, namePeter);
+
+    System.out.println("Inter Name, please: ");
+    String nameInput = input.next();//nextInt();
+    System.out.printf(testStr, nameInput);
   }
 }
